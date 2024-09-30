@@ -1,0 +1,38 @@
+.root {
+	-fx-background-image: url('../images/images.jpg');
+    -fx-background-size: cover;
+    -fx-text-fill: white;
+}
+
+.title {
+    -fx-font-size: 20.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.custom-button {
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+    -fx-padding: 8.0px 16.0px;
+    -fx-border-radius: 4.0px;
+    -fx-background-radius: 4.0px;
+    -fx-background-image: url('../images/bg.jpg');
+    -fx-background-size: cover;
+}
+
+.circular-button {
+    -fx-border-color: transparent; /* Transparent border color */
+    -fx-border-width: 0.0; /* No border width */
+    -fx-border-radius: 50.0%; /* Make the button circular */
+    -fx-background-radius: 50.0%; /* Make the background of the button circular */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14.0px; /* Font size */
+    -fx-background-image: url('../images/bg.jpg');
+    -fx-background-size: cover;
+}
+
+.background {
+	-fx-background-image: url('../images/bank1.jpeg');
+    -fx-background-size: cover;
+    -fx-text-fill: white;
+}

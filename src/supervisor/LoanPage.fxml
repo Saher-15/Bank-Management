@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SvLoanPageController">
+	<children>
+		<Button fx:id="credit_button" layoutX="120.0" layoutY="368.0" mnemonicParsing="false" onAction="#credit" prefHeight="25.0" prefWidth="120.0" styleClass="custom-button" stylesheets="@../css/styles.css" text="Credits" />
+		<Button fx:id="frames_button" layoutX="480.0" layoutY="368.0" mnemonicParsing="false" onAction="#frame" prefHeight="25.0" prefWidth="120.0" styleClass="custom-button" stylesheets="@../css/styles.css" text="Frames" />
+		<Button fx:id="logout_button" layoutY="368.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="120.0" styleClass="custom-button" stylesheets="@../css/styles.css" text="LogOut" />
+		<Button fx:id="loan_button" layoutX="240.0" layoutY="368.0" mnemonicParsing="false" onAction="#loan" prefHeight="25.0" prefWidth="120.0" styleClass="custom-button" stylesheets="@../css/styles.css" text="Loans" />
+		<Button fx:id="mortgage_button" layoutX="360.0" layoutY="368.0" mnemonicParsing="false" onAction="#mortgage" prefHeight="25.0" prefWidth="120.0" styleClass="custom-button" stylesheets="@../css/styles.css" text="Mortgages" />
+      <TableView fx:id="loanRequests" layoutX="27.0" layoutY="48.0" prefHeight="305.0" prefWidth="547.0" styleClass="root" stylesheets="@../css/styles.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" style="-fx-alignment: CENTER;" text="ID" />
+            <TableColumn fx:id="loanAmount" prefWidth="90.0" style="-fx-alignment: CENTER;" text="Loan Amount" />
+            <TableColumn fx:id="numbersOfPayments" prefWidth="135.0" style="-fx-alignment: CENTER;" text="Number Of Payments" />
+            <TableColumn fx:id="requestDate" prefWidth="100.0" style="-fx-alignment: CENTER;" text="Date Of Request" />
+            <TableColumn fx:id="approve" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Approve" />
+            <TableColumn fx:id="reject" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Reject" />
+         </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="182.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="background" text="Loans Requests" textAlignment="CENTER" wrappingWidth="236.42230224609375">
+         <font>
+            <Font name="Arial Narrow Bold" size="26.0" />
+         </font>
+      </Text>
+	</children>
+</Pane>
