@@ -1,0 +1,18 @@
+# Environment
+.env
+config.properties
+
+# Build output
+build/
+output/
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+nbproject/
+
+# OS
+.DS_Store

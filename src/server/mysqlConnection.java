@@ -25,11 +25,10 @@ import controllers.HomePageController;
 
 public class mysqlConnection {
 	static Connection conn;
-	// mysql://um48gnh5wg5r5ena:LApuucfs1IKw4M77c03z@b8ncbhbif2q9ysj6rwoa-mysql.services.clever-cloud.com:3306/b8ncbhbif2q9ysj6rwoa
 
-	public static String db_name = "jdbc:mysql://um48gnh5wg5r5ena:LApuucfs1IKw4M77c03z@b8ncbhbif2q9ysj6rwoa-mysql.services.clever-cloud.com:3306/b8ncbhbif2q9ysj6rwoa";
-	public static String db_user = "um48gnh5wg5r5ena";
-	public static String db_password = "LApuucfs1IKw4M77c03z";
+	public static String db_name = System.getenv("DB_URL") != null ? System.getenv("DB_URL") : "jdbc:mysql://localhost:3306/bank";
+	public static String db_user = System.getenv("DB_USER") != null ? System.getenv("DB_USER") : "root";
+	public static String db_password = System.getenv("DB_PASSWORD") != null ? System.getenv("DB_PASSWORD") : "";
 
 	public static void connectToDataBase() {
 		try {
